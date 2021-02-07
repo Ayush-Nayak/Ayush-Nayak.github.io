@@ -1,0 +1,200 @@
+/* Fonts */
+
+@font-face {
+    font-family: ApercuMono;
+    src: url(fonts/apercu_mono_pro.otf);
+}
+
+@font-face {
+    font-family: GraphikNorm;
+    src: url(fonts/Graphik-400-Regular.otf);
+}
+
+@font-face {
+    font-family: GraphikItal;
+    src: url(fonts/Graphik-400-RegularItalic.otf);
+}
+
+@font-face {
+    font-family: GraphikLightNorm;
+    src: url(fonts/Graphik-300-Light.otf);
+}
+
+@font-face {
+    font-family: GraphikLightItal;
+    src: url(fonts/Graphik-300-Light-Italic.otf);
+}
+
+@font-face {
+    font-family: ApercuMed;
+    src: url(fonts/apercu_medium_pro.otf);
+}
+
+@font-face {
+    font-family: ApercuReg;
+    src: url(fonts/apercu_regular_pro.otf);
+}
+
+/* Colors */
+:root {
+    /* Credit - Dracula Theme */
+    --bg-color: #282a36;
+    --cl-color: #44475a;
+    --fg-color: #f8f8f2;
+    --comment-color: #6272a4;
+    --pink-color: #ff79c6;
+    --red-color: #ff5555;
+    --purple-color: #bd93f9;
+    --yellow-color: #f1fa8c;
+    --green-color: #50fa7b;
+    --cyan-color: #8be9fd;
+
+}
+
+/* Custom Spans */
+
+.cyan {
+    color: var(--cyan-color);
+}
+
+.green {
+    color: var(--green-color);
+}
+
+.red {
+    color: var(--red-color)
+}
+
+.purple {
+    color: var(--purple-color)
+}
+
+.yellow {
+    color: var(--yellow-color)
+}
+
+.pink {
+    color: var(--pink-color)
+}
+
+.comment {
+    color: var(--comment-color)
+}
+
+
+/* Custom Selection Colors */
+
+/* ::selection {
+    background: var(--pink-color); 
+  }
+  ::-moz-selection {
+    background: var(--pink-color); 
+  } */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: ApercuMed;
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+    word-wrap: break-word;
+    padding-bottom: 15rem;
+}
+
+.edit-message {
+    font-family: GraphikLightItal;
+    font-size: 1rem;
+    padding-left: 9rem;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    color: var(--comment-color);
+    position: sticky;
+    top: 0;
+    padding-top: 2rem;
+    z-index: 10;
+}
+
+
+.line-div {
+    background-color: var(--bg-color);
+    color: var(--cl-color);
+    padding: 0;
+    margin: 0;
+    position:relative;
+    z-index: 0;
+}
+
+.line-div:hover {
+    padding: 0;
+    margin: 0;
+    /* background-color: var(--cl-color); */
+    transition-duration: 0s;
+
+}
+
+.line-div:hover > .commit-message {
+    color: var(--comment-color);
+    transition-duration: inherit;
+}
+
+.line-div:hover > .line-number {
+    color: var(--fg-color);
+    transition-duration: inherit;
+}
+
+.line-div:hover > .not-line {
+    background-color: var(--cl-color);
+    transition-duration: inherit;
+}
+
+.codeblock {
+    padding-left: 10rem;
+    font-family: ApercuMono;
+}
+
+.line-number {
+    padding-top: none;
+    margin-top: none;
+    font-family: ApercuMono;
+    /* background-color: var(--bg-color); */
+    font-size: 2rem;
+    padding-right: 2rem;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+}
+
+.not-line {
+    color: var(--fg-color);
+    margin-right: 2rem;
+    width: 100%;
+    position:absolute;
+    z-index: 99;
+}
+
+
+a, a:active, a:visited, a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: inherit;
+    transition-duration: inherit;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
