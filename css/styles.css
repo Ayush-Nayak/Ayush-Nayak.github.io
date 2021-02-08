@@ -97,15 +97,15 @@ body {
     font-family: ApercuMed;
     color: var(--fg-color);
     background-color: var(--bg-color);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     word-wrap: break-word;
-    padding-bottom: 15rem;
+    padding-bottom: 10%;
 }
 
 .edit-message {
     font-family: GraphikLightItal;
-    font-size: 1rem;
-    padding-left: 9rem;
+    font-size: 100%;
+    padding-left: 5%;
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
@@ -151,7 +151,7 @@ body {
 }
 
 .codeblock {
-    padding-left: 10rem;
+    padding-left: 5%;
     font-family: ApercuMono;
 }
 
@@ -160,8 +160,8 @@ body {
     margin-top: none;
     font-family: ApercuMono;
     /* background-color: var(--bg-color); */
-    font-size: 2rem;
-    padding-right: 2rem;
+    font-size: 100%;
+    padding-right: 3%;
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
@@ -171,7 +171,7 @@ body {
 
 .not-line {
     color: var(--fg-color);
-    margin-right: 2rem;
+    margin-right: 20%;
     width: 100%;
     position:absolute;
     z-index: 99;
