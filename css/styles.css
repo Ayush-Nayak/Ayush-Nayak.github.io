@@ -138,6 +138,7 @@ body {
     display: block;
     right: 0;
     font-family: ApercuMono;
+    
 
 }
 
@@ -149,9 +150,10 @@ body {
     word-wrap: break-word;
     text-overflow: ellipsis;
     margin-left: 4rem;
+    padding-left: 5px;
 }
  .line-div:hover {
-    transition-duration: 0s;
+    transition-duration: 0.2s;
 
 }
 
@@ -164,6 +166,7 @@ body {
 .line-div:hover > .not-line {
     background-color: var(--cl-color);
     transition-duration: inherit;
+    border-radius: 10px;
 } 
 
 
